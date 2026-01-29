@@ -16,6 +16,4 @@ public class ListController {
         return "List";
 
     }
-
-
 }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="'Appointment'"></p>
+</body>
+</html>
+
+<ul>
+    <li th:each="appointment : ${appointments}">
+        <span th:text="${appointment.id}">Id: </span>
+        <span th:text="${appointment.date}">Date: </span>
+        <span th:text="${appointment.time}">Time: </span>
+    </li>
+</ul>
