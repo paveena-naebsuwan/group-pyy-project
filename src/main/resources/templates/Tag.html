@@ -2,16 +2,16 @@
 <html lang="sv" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Tags</title>
+    <title>Taggar</title>
 </head>
 <body>
 
 <h1>Taggar</h1>
 
 <ul>
-    <li th:each="tag : ${tags}"
-        th:text="${tag.name}">
-        Tag name
+    <li th:each="tag : ${tags}">
+        <strong th:text="${tag.name}">Tag namn</strong> |
+        Skapad: <span th:text="${#dates.format(tag.createdAt, 'yyyy-MM-dd HH:mm')}">Datum</span>
     </li>
 </ul>
 
