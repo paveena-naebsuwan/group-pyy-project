@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratings</title>
+</head>
+<body>
+
+<h1>Betyg</h1>
+
+<ul>
+    <li th:each="rating : ${ratings}">
+        <span th:text="${rating.author}">Author</span>:
+        <span th:text="${rating.value}">Value</span> stjärnor
+    </li>
+</ul>
+
+<p th:text="${message}"></p>
+
+</body>
+</html>
