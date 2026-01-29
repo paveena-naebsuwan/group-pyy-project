@@ -9,6 +9,7 @@ import se.iths.paveena.grouppyyproject.model.User;
 import java.util.List;
 
 @Controller
+@RequestMapping("/")
 public class UserController {
 
     @GetMapping("/user")
