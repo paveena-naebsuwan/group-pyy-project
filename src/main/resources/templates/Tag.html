@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tags</title>
+</head>
+<body>
+
+<h1>Taggar</h1>
+
+<ul>
+    <li th:each="tag : ${tags}"
+        th:text="${tag.name}">
+        Tag name
+    </li>
+</ul>
+
+<p th:text="${message}"></p>
+
+</body>
+</html>
