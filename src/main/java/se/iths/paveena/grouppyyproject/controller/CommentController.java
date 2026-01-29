@@ -1,7 +1,7 @@
 package se.iths.paveena.grouppyyproject.controller;
 
-import ch.qos.logback.core.model.Model;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,11 +12,13 @@ public class CommentController {
 
     @GetMapping
     public String getComments(Model model) {
-        return "List";
+        model.addAttribute("message", "Lista med kommentarer");
+        return "comments";
     }
 
     @PostMapping
-    public String createComment() {
-        return "Comment";
+    public String createComment(Model model) {
+        model.addAttribute("message", "Kommentar skapad");
+        return "comment-created";
     }
 }
