@@ -17,9 +17,9 @@ public class RatingController {
     public String getRatings(Model model) {
 
         List<Rating> ratings = List.of(
-                new Rating(1L, "Yunus", 5.0),
-                new Rating(2L, "Yunus-can", 3.8),
-                new Rating(3L, "Paveena", 3.4)
+                new Rating(1L, "Adam", 5.0),
+                new Rating(2L, "Bertil", 3.8),
+                new Rating(3L, "Cesar", 3.4)
         );
         model.addAttribute("ratings", ratings);
         return "ratings";
