@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="'Personal informations'"></p>
+</body>
+</html>
+
+<ul>
+    <li th:each="person : ${persons}">
+        <span th:text="${person.id}">ID:</span> -
+        <span th:text="${person.name}">Name: </span>
+        <span th:text="${person.telephoneNumber}">Telephone number:</span>
+        <span th:text="${person.address}">Address: </span>
+    </li>
+</ul>
