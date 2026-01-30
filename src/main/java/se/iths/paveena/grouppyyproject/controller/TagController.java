@@ -19,7 +19,7 @@ public class TagController {
 
         List<Tag> tags = List.of(
                 new Tag(1L, "Coding", LocalDateTime.now()),
-                new Tag(1L, "JavaCoding", LocalDateTime.now()),
+                new Tag(2L, "JavaCoding", LocalDateTime.now()),
                 new Tag(3L, "LearningToCode", LocalDateTime.now())
         );
         model.addAttribute("tags", tags);
