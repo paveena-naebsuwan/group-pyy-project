@@ -11,7 +11,7 @@ public class HomeController {
 
     @GetMapping
     public String welcome(Model model){
-        String greeting = "Välkommen";
+        String greeting = "Välkommen yunus-can";
         model.addAttribute("greeting", greeting);
         return "welcome";
     }
